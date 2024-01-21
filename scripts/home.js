@@ -51,31 +51,5 @@ twitterInp.forEach((e, i) => {
   });
 });
 
-//twitter popup
-const popupBtn = document.querySelectorAll(".tweet-btn");
-const popupCont = document.querySelector(".popup-container");
-const closePopup = document.querySelectorAll(".popup-header .esc-btn");
-const feedSec = document.querySelector(".feed");
 
-popupBtn.forEach((btn, i) => {
-  btn.addEventListener("click", () => {
-    popupCont.style.display = "flex";
-    if (i = 0) {
-      feedSec.style.display = "none";
-    }
-  });
-});
 
-closePopup.forEach((btn, i) => {
-  btn.addEventListener("click", () => {
-    if (i == 0) {
-      const messagePopup = document.querySelector(".message-popup");
-      const tweetPopup = document.querySelector(".tweet-popup");
-      messagePopup.style.display = "none";
-      tweetPopup.style.display = "initial";
-    }
-
-    popupCont.style.display = "none";
-    feedSec.style.display = "";
-  });
-});

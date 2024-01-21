@@ -578,63 +578,10 @@ p {
   fill: rgb(91, 112, 131);
 }
 
-.popup-container {
-  position: absolute;
-  width: 100vw;
-  height: 100em;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 10;
-}
 
-.popup-container .message-popup{
-  background-color: #ffffff;
-  width: 450px;
-  height: 500px;
-  margin: 30px auto;
-  padding: 5px 15px;
-  border-radius: 15px;
-}
 
-.message-popup .popup-header{
-  border-bottom: 1px solid rgb(235, 238, 240);
-}
 
-.message-popup p{
-  font-size: 20px;
-  margin: 15px auto;
-}
 
-.message-popup a{
-  text-decoration: underline;
-}
-
-.popup-container .tweet-popup {
-  display: none;
-  width: 600px;
-  height: 290px;
-  background-color: #ffffff;
-  border-radius: 15px;
-  margin: auto;
-  margin-top: 30px;
-}
-
-.popup-header button {
-  margin: 10px;
-}
-
-.popup-header #arrow {
-  display: none;
-  align-items: center;
-}
-
-.popup-container .post-sender {
-  height: 80%;
-  border: none;
-}
-
-.popup-container .post-form textarea {
-  height: 70%;
-}
 
 @media (max-width: 1265px) {
   .left-sidebar {
@@ -743,13 +690,7 @@ p {
     display: flex;
   }
 
-  .popup-container {
-    background-color: #ffffff;
-  }
 
-  .popup-container .tweet-popup {
-    margin: 0px;
-  }
 
   .tweet-popup #x {
     display: none;
