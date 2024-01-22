@@ -155,16 +155,21 @@ p {
 
 .feed .post {
   display: flex;
+  flex-direction: column;
   padding-top: 10px;
   padding-right: 15px;
   animation: generating 0.5s;
 }
 
+.comments.hidden {
+  display: none;
+}
+
 @keyframes generating {
-  0%{
+  0% {
     transform: scale(0.1);
   }
-  100%{
+  100% {
     transform: scale(1);
   }
 }
@@ -578,10 +583,9 @@ p {
   fill: rgb(91, 112, 131);
 }
 
-
-
-
-
+li {
+  text-decoration: none;
+}
 
 @media (max-width: 1265px) {
   .left-sidebar {
@@ -690,13 +694,11 @@ p {
     display: flex;
   }
 
-
-
   .tweet-popup #x {
     display: none;
   }
 
-  .tweet-popup #arrow{
+  .tweet-popup #arrow {
     display: flex;
   }
 
@@ -704,7 +706,7 @@ p {
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
   }
 
-  .tweet-popup .form-btns button[type="submit"]{
+  .tweet-popup .form-btns button[type="submit"] {
     position: absolute;
     top: 0;
     right: 10px;
